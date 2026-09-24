@@ -1,0 +1,112 @@
+// Switch Case Statement
+system.out.print("\nEnter a day number (1-7)");
+int day = scanner.nextInt();
+
+switch (day) {
+    case 1: System.out.println("Monday"); break;
+    case 2: System.out.println("Tuesday"); break;
+    case 3: System.out.println("Wednesday"); break;
+    case 4: System.out.println("Thursday"); break;
+    case 5: System.out.println("Friday"); break;
+    case 6: System.out.println("Saturday"); break;
+    case 7: System.out.println("Sunday"); break;
+    default: System.out.println("Invalid day"); break
+
+}
+
+//loops(for, while, do while)
+
+System.out.println("\nCounting 1 to 5 with a for loop: ");
+        for(int i= 1; i<=5; i++) {
+                System.out.print(i + " ");
+        }
+        System.out.println();
+
+// while loops
+System.out.println("\nCounting down form with a while loops:");
+        int n = 5;
+        while (n > 0){
+        System.out.print(n + " ");
+        n--;
+}
+System.out.println();
+
+//do while loops
+System.out.println("\ndo-while example: ");
+int x=0;
+do {
+       System.out.println("x= "+x);
+       x++;
+ }while (x<3);
+
+// break and continue
+System.out.prinln("\nSkipping 3 using continue, stopping at 7 using break: ");
+      for(int i =1; i <=10; i++){
+      if (i == 3) continue;
+      if (i == 7) break;
+      System.out.println(i +" ");
+}
+System.out.println();
+// Methods
+// Takes a double, return its square
+static double square(double n){
+    return a + b;
+}
+Takes two ints, returns their sum
+static int add(int a, int b){
+    return a + b;
+} 
+// void function: performs an action, return nothing 
+static void greet(String name){
+    System.out.println("Hello, " + name + "! Welcome to Java.")'
+}
+
+// Recursive function/: calls itself with smaller problem
+static int factorial(int n){
+    if(n <= 1){
+       return 1;
+    }
+    return n * factorial(n-1);
+}
+static int multiply(int a, int b){
+       return a * b;
+}
+
+static double multiply (double a, double b){
+       return a * b;
+}
+// power, exponent
+static int power(int base, int exponent){
+       int result = 1;
+       for (int i = 0; i <exponent; i++){
+        result *= base;
+       }
+       return result;
+}
+
+// base
+static int power(int base){
+       return power(base, 2)
+}
+// Calling Functions
+int sum = add(5, 7);
+System.out.println("5 + 7=" +sum);
+
+// Squareroot
+double sq = square(4.5);
+System.out.println("4.5 squared = "+ sq);
+
+greet("Maria");
+
+System.out.println("5! = "+factorial(5));
+
+System.out.println("multiply(2, 3) = "+ multiply(2, 3));
+System.out.println("multiply(2, 3) = "+ multiply(2.5, 4.0));
+
+System.out.println("power(5) = " +power(5));
+System.out.println("power(5) = " +power(5, 3));
+scanner.close()
+
+    }
+}
+
